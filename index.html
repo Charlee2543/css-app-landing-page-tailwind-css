@@ -5,9 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @layer base {
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      }
+    </style>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="bg-[#F6F6FB] min-w-auto h-auto">
+    <main>
+      <!-- Start: Dev3 -->
+      <section class="feat-section flex flex-row justify-center gap-[20px] my-[60px] mx-[30px]">
+        <article class="feat-card w-[350px] h-auto rounded-[20px] bg-[#D7E5F6]">
+          <div class="icon-card w-fit h-fit p-[13px] rounded-[12px] m-[25px] mb-[30px] bg-[#FFFFFF]">
+            <img src="icon image\rocket.png" alt="rocket icon" class="w-[25px]" />
+          </div>
+          <div class="content-card m-[25px]">
+            <span class="headline-card text-[20px] font-bold">
+              Streamlined Workflows
+            </span>
+            <p class="detail-card mt-[10px] text-[#5F5F76]">
+              Automate repetitive tasks and focus on high-impact work with our powerful productivity features.
+            </p>
+          </div>
+        </article>
+        <article class="feat-card w-[350px] h-auto rounded-[20px] bg-[#D8E0FC]">
+          <div class="icon-card w-fit h-fit p-[13px] rounded-[12px] m-[25px] mb-[30px] bg-[#FFFFFF]">
+            <img src="icon image\flag.png" alt="flag icon" class="w-[25px]" />
+          </div>
+          <div class="content-card m-[25px]">
+            <span class="headline-card  text-[20px] font-bold">
+              Blazing Fast Performance
+            </span>
+            <p class="detail-card mt-[10px] text-[#5F5F76]">
+              Experience lightning-fast performance and instant responsiveness with our cutting-edge technology.
+            </p>
+          </div>
+        </article>
+        <article class="feat-card w-[350px] h-auto rounded-[20px] bg-[#E8DCF6]">
+          <div class="icon-card w-fit h-fit p-[13px] rounded-[12px] m-[25px] mb-[30px] bg-[#FFFFFF]">
+            <img src="icon image/smile.png" alt="smile icon" class="w-[25px]" />
+          </div>
+          <div class="content-card m-[25px]">
+            <span class="headline-card  text-[20px] font-bold">
+              Intuitive Interface
+            </span>
+            <p class="detail-card mt-[10px] text-[#5F5F76]">
+              Our user-friendly interface makes it easy for anyone to streamline their workflow.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- End: Dev3 -->
+    </main>
   </body>
 </html>
