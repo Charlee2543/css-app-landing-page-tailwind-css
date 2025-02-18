@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- Start Coding Here -->
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link rel="stylesheet" href="./style.css" /> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Acme App</title>
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+		<style type="text/tailwindcss">
+			@layer base {
+				* {
+					margin: 0px;
+					padding: 0px;
+					font-family: sans-serif;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- /*-------------------- head section start here--------------------*/ -->
+
+		<header
+			class="nav-header my-13 mx-32 h-20 flex flex-row justify-between items-center text-black"
+		>
+			<a href="" class="nav-logo text-[2rem]">Acme</a>
+			<nav class="nav-navbar gap-12 flex flex-row text-base text-black">
+				<a href="" class="nav-home underline text-[#5e44ff]">Home</a>
+				<a href="">Features</a>
+				<a href="">Pricing</a>
+				<a href="">Contact</a>
+			</nav>
+		</header>
+		<section
+			class="hero-section m-30 flex flex-col items-center text-black text-base"
+		>
+			<h3
+				class="hero-Productivity flex justify-center items-center px-3 w-[250px] h-10 rounded-[20px] bg-[#573aff34] text-[#5e44ff]"
+			>
+				🌈Acme Productivity App
+			</h3>
+			<h1 class="hero-main mt-10 mb-6 text-[80px]">
+				Boost Your <span class="text-[#5e44ff]">Product</span>ivity
+			</h1>
+			<h4 class="hero-title text-6">
+				Streamline your workflow whit ouy all-in-one productivity app.
+			</h4>
+			<button
+				class="hero-button-start mt-10 w-[187px] h-[56px] rounded-[10px] bg-black text-white cursor-pointer active:cursor-default active:bg-[#5e44ff]"
+			>
+				Start free trial
+			</button>
+		</section>
+		<!-- /*-------------------- head section start here--------------------*/ -->
+	</body>
 </html>
