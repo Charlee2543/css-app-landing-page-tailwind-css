@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Acme App</title>
-		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-		<style type="text/tailwindcss">
-			@layer base {
-				* {
-					margin: 0px;
-					padding: 0px;
-					font-family: sans-serif;
-					box-sizing: border-box;
-				}
-			}
-		</style>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Acme App</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @layer base {
+        * {
+          margin: 0px;
+          padding: 0px;
+          font-family: sans-serif;
+          box-sizing: border-box;
+        }
+      }
+    </style>
+  </head>
 
-	<body class="bg-[#F6F6FB] min-w-auto h-auto">
-		<!-- /*-------------------- head section start here--------------------*/ -->
+  <body class="bg-[#F6F6FB] min-w-auto h-auto">
+    <!-- /*-------------------- head section start here--------------------*/ -->
 
 		<header
 			class="nav-header m-6 py-7 px-26 h-[80px] bg-[#FFFFFF] flex flex-row justify-between items-center rounded-[100px] text-black"
@@ -127,103 +127,109 @@
 		</main>
 		<!-- End: Dev2 -->
 
-		<!---------- Start Dev 3 ---------->
-		<!-- Contact Section -->
-		<div
-			class="contact-container flex items-center justify-center bg-[#F6F6FB] box-border m-0 p-0"
-		>
-			<div
-				class="contact-section bg-[#FFFFFF] bg-opacity-70 p-10 rounded-3xl w-[1199px] h-[666px] text-center"
-			>
-				<h2 class="contact-h2 text-[44px] leading-[48px] font-bold mb-6 mt-12">
-					Get in Touch
-				</h2>
+    <!---------- Start Dev 3 ---------->
+    <!-- Contact Section -->
+    <div
+      class="contact-container flex flex-col items-center justify-center bg-[#F6F6FB] min-h-screen p-4"
+    >
+      <div
+        class="contact-section bg-[#FFFFFF] bg-opacity-70 p-6 sm:p-10 rounded-3xl w-full max-w-[1199px] text-center"
+      >
+        <h2
+          class="contact-h2 text-[32px] sm:text-[44px] leading-tight font-bold mb-6"
+        >
+          Get in Touch
+        </h2>
 
-				<form
-					class="contact-form flex flex-col gap-4 items-center"
-					action="#"
-					method="POST"
-				>
-					<label
-						class="contact-label text-[#5F5F76] self-start ml-64 text-left text-base"
-						for="name"
-						>Name</label
-					>
-					<input
-						class="contact-input w-[589px] p-3 border border-[#E0E0ED] rounded-xl hover:border-[#B5A9FF] focus:outline-none focus:border-[#5E44FF]"
-						type="text"
-						id="name"
-						name="name"
-						placeholder="John Doe"
-						required
-					/>
-
-					<label
-						class="contact-label text-[#5F5F76] self-start ml-64 text-left text-base"
-						for="email"
-						>Email</label
-					>
-					<input
-						class="contact-input w-[589px] p-3 border border-[#E0E0ED] rounded-xl hover:border-[#B5A9FF] focus:outline-none focus:border-[#5E44FF]"
-						type="email"
-						id="email"
-						name="email"
-						placeholder="john@example.com"
-						required
-					/>
-
-					<label
-						class="contact-label text-[#5F5F76] self-start ml-64 text-left text-base"
-						for="message"
-						>Message</label
-					>
-					<textarea
-						class="contact-textarea w-[589px] h-[102px] p-3 border border-[#E0E0ED] rounded-xl hover:border-[#B5A9FF] focus:outline-none focus:border-[#5E44FF]"
-						id="message"
-						name="message"
-						placeholder="Your message..."
-						required
-					></textarea>
-
-					<button
-						class="contact-button w-[589px] h-[56px] bg-[#1A1A2C] text-[#FFFFFF] font-semibold rounded-2xl mt-6 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-4 focus:ring-[#5F5F76]"
-						type="submit"
-					>
-						Submit
-					</button>
-				</form>
-
-				<footer
-					class="contact-footer flex justify-between items-center w-[1199px] p-5 text-sm relative top-12 mt-12 right-12"
-				>
-					<p class="contact-p text-[#5F5F76]">
-						Acme Productivity App &copy; 2024
-					</p>
-					<nav class="contact-nav space-x-6">
-						<a
-							class="contact-a text-[#1A1A2C] font-semibold hover:underline hover:text-[#5E44FF]"
-							href="#"
-							>FAQ</a
-						>
-						<a
-							class="contact-a text-[#1A1A2C] font-semibold hover:underline hover:text-[#5E44FF]"
-							href="#"
-							>Terms</a
-						>
-						<a
-							class="contact-a text-[#1A1A2C] font-semibold hover:underline hover:text-[#5E44FF]"
-							href="#"
-							>AI Policy</a
-						>
-						<a
-							class="contact-a text-[#1A1A2C] font-semibold hover:underline hover:text-[#5E44FF]"
-							href="#"
-							>Pricing</a
-						>
-					</nav>
-				</footer>
-			</div>
-		</div>
-		<!---------- End Dev 3 ---------->
-	</body>
+        <form
+          class="contact-form flex flex-col gap-4 items-center"
+          action="#"
+          method="POST"
+        >
+          <div class="flex flex-col items-start w-full max-w-[589px]">
+            <label
+              class="contact-label text-[#5F5F76] self-start text-left text-base"
+              for="name"
+              >Name</label
+            >
+            <input
+              class="contact-input w-full max-w-[589px] p-3 border border-[#E0E0ED] rounded-xl hover:border-[#B5A9FF] focus:outline-none focus:border-[#5E44FF] relative"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="flex flex-col items-start w-full max-w-[589px]">
+            <label
+              class="contact-label text-[#5F5F76] self-start text-left text-base"
+              for="email"
+              >Email</label
+            >
+            <input
+              class="contact-input w-full max-w-[589px] p-3 border border-[#E0E0ED] rounded-xl hover:border-[#B5A9FF] focus:outline-none focus:border-[#5E44FF]"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+              required
+            />
+          </div>
+          <div class="flex flex-col items-start w-full max-w-[589px]">
+            <label
+              class="contact-label text-[#5F5F76] self-start text-left text-base"
+              for="message"
+              >Message</label
+            >
+            <textarea
+              class="contact-textarea w-full max-w-[589px] h-[102px] p-3 border border-[#E0E0ED] rounded-xl hover:border-[#B5A9FF] focus:outline-none focus:border-[#5E44FF]"
+              id="message"
+              name="message"
+              placeholder="Your message..."
+              required
+            ></textarea>
+          </div>
+          <button
+            class="contact-button w-full max-w-[589px] h-[56px] bg-[#1A1A2C] text-[#FFFFFF] font-semibold rounded-2xl mt-6 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-4 focus:ring-[#5F5F76]"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <footer
+        class="contact-footer flex flex-col sm:flex-row justify-between items-center w-full max-w-[1199px] p-5 text-sm mt-8"
+      >
+        <p class="contact-p text-[#5F5F76]">
+          Acme Productivity App &copy; 2024
+        </p>
+        <nav
+          class="contact-nav flex flex-wrap justify-center gap-4 sm:gap-6 mt-4 sm:mt-0"
+        >
+          <a
+            class="contact-a text-[#1A1A2C] font-semibold hover:underline hover:text-[#5E44FF]"
+            href="#"
+            >FAQ</a
+          >
+          <a
+            class="contact-a text-[#1A1A2C] font-semibold hover:underline hover:text-[#5E44FF]"
+            href="#"
+            >Terms</a
+          >
+          <a
+            class="contact-a text-[#1A1A2C] font-semibold hover:underline hover:text-[#5E44FF]"
+            href="#"
+            >AI Policy</a
+          >
+          <a
+            class="contact-a text-[#1A1A2C] font-semibold hover:underline hover:text-[#5E44FF]"
+            href="#"
+            >Pricing</a
+          >
+        </nav>
+      </footer>
+    </div>
+    <!---------- End Dev 3 ---------->
+  </body>
 </html>
