@@ -31,11 +31,14 @@
 			class="nav-header m-6 py-7 px-26 h-[80px] bg-[#FFFFFF] flex flex-row justify-between items-center rounded-[100px] text-black"
 		>
 			<a href="" class="nav-logo text-[2rem]">Acme</a>
-			<nav class="nav-navbar gap-12 flex flex-row text-base text-black">
-				<a href="" class="nav-home underline text-[#5e44ff]">Home</a>
-				<a href="">Features</a>
-				<a href="">Pricing</a>
-				<a href="">Contact</a>
+			<nav class="nav-navbar">
+				<a class="lg:hidden" href="">☰</a>
+				<div class="gap-12 flex-row text-base text-black hidden lg:flex">
+					<a href="" class="nav-home underline text-[#5e44ff]">Home</a>
+					<a href="">Features</a>
+					<a href="">Pricing</a>
+					<a href="">Contact</a>
+				</div>
 			</nav>
 		</header>
 		<section
@@ -46,11 +49,14 @@
 			>
 				🌈Acme Productivity App
 			</h3>
-			<h1 class="hero-main mt-10 mb-6 text-[80px]">
-				Boost Your <span class="text-[#5e44ff]">Product</span>ivity
+			<h1 class="hero-main mt-10 text-[80px] text-center font-semibold">
+				Boost Your
+				<span class="text-[#5e44ff]">Product</span>ivity
 			</h1>
-			<h4 class="hero-title text-2xl">
-				Streamline your workflow whit ouy all-in-one productivity app.
+			<h4 class="hero-title mt-6 text-2xl text-center font-medium">
+				Streamline your workflow <br class="lg:hidden" />
+				whit ouy all-in-one <br class="lg:hidden" />
+				productivity app.
 			</h4>
 			<button
 				class="hero-button-start mt-10 w-[187px] h-[56px] rounded-[10px] bg-black text-white cursor-pointer active:cursor-default active:bg-[#5e44ff]"
